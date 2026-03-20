@@ -1,0 +1,1 @@
+# Desarrollo de un perceptrón para la función NAND
