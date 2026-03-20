@@ -35,12 +35,6 @@ def train(perceptron, TablaNand, limit_range = 0.1, generations = 25):
             perceptron.w2 += limit_range * error * x2
             perceptron.bias += limit_range * error
             
-        print(f"Generación {generation + 1}: "
-            f"w1: {round(perceptron.w1, 2)} "
-            f"w2: {round(perceptron.w2, 2)} "
-            f"bias: {round(perceptron.bias, 2)}"
-            )
-            
             
 def prueba(perceptron, TablaNand):
     
@@ -60,7 +54,7 @@ def main():
     
     perceptron = Perceptron()
     
-    train(perceptron, TablaNand, limit_range=0.1, generations=18)
+    train(perceptron, TablaNand, limit_range=0.1, generations=12)
     
     prueba(perceptron, TablaNand)
 
